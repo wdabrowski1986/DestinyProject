@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser');
-const expressValidator = require('express-validator');
+//const expressValidator = require('express-validator');
 const fs = require('fs');
 const cors = require('cors');
 const dotenv = require('dotenv');
@@ -41,7 +41,7 @@ app.get('/api', (req, res) => {
 app.use(morgan('dev'));
 app.use(bodyParser.json());
 app.use(cookieParser());
-app.use(expressValidator());
+//app.use(expressValidator());
 app.use(cors());
 app.use('/api', postRoutes);
 app.use('/api', authRoutes);
