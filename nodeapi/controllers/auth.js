@@ -75,7 +75,7 @@ exports.forgotPassword = (req, res) => {
 
         // email data
         const emailData = {
-            from: 'noreply@node-react.com',
+            from: 'noreply@destinyboard.com',
             to: email,
             subject: 'Password Reset Instructions',
             text: `Please use the following link to reset your password: ${
