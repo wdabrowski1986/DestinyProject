@@ -76,7 +76,7 @@ class Signup extends Component {
             });
         } else {
             this.setState({
-                error: "What day is today? Please write a correct answer!"
+                error: "What day is today? Please write the correct response."
             });
         }
     };
@@ -113,7 +113,7 @@ class Signup extends Component {
 
             <div className="form-group">
                 <label className="text-muted">
-                    {recaptcha ? "Thanks. You got it!" : "What day is today?"}
+                    {recaptcha ? "Thanks! You know your days!" : "What day is today?"}
                 </label>
 
                 <input

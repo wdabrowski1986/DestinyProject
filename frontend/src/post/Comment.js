@@ -46,7 +46,6 @@ class Comment extends Component {
                         console.log(data.error);
                     } else {
                         this.setState({ text: "" });
-                        // dispatch fresh list of coments to parent (SinglePost)
                         this.props.updateComments(data.comments);
                     }
                 }
